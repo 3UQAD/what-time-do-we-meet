@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>When do we meet?</title>
+</head>
+<body>
+
+    <div id="add-timezone-row" class="add-timezone-row">
+        <select id="add-timezone-select" class="add-timezone-select">
+            <option value="">Add a city…</option>
+        </select>
+    </div>
+
+    <div id="time-zones-container"></div>
+
+    <div class="controls">
+        <div class="format-toggle">
+            <span>24h</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="format-toggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+            <span>12h</span>
+        </div>
+        <div class="format-toggle">
+            <span>Light</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="toggle-slider"></span>
+            </label>
+            <span>Dark</span>
+        </div>
+        <button class="now-button" id="now-button">Reset to Now</button>
+    </div>
+    <script src="time-zones.js"></script>
+</body>
+</html>
